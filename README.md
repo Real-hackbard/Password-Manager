@@ -97,3 +97,39 @@ https://en.wikipedia.org/wiki/List_of_password_managers
 
 # Password Generator
 A random password generator is a software program or hardware device that takes input from a random or [pseudo-random](https://en.wikipedia.org/wiki/Pseudorandomness) number generator and automatically generates a password.
+
+</br>
+
+```pascal
+// Example Code
+procedure TForm1.Button1Click(Sender: TObject);
+  var
+    Result,str,str1,str2,str3,str4:String;
+    PLen:Integer;
+  begin
+    Randomize;
+    str:='';
+    str1:='19283746504378192560';
+    str2:='abcdefghijklmnopqastuvwxyz';
+    str3:='ABCDEFGHIJKLMNOPQASTUVWXYZ';
+    str4:='!@#$%^&*()_+|\=-<>.,/?''; :"][}{';
+    Result:='';
+    PLen:=SpinEdit1.Value;
+      if (CheckBox1.Checked=True) then str:=str+str1;
+      if (CheckBox2.Checked=True) then str:=str+str2;
+      if (CheckBox3.Checked=True) then str:=str+str3;
+      if (CheckBox4.Checked=true) then str:=str+str4;
+      if  (CheckBox1.Checked=False)
+      and (CheckBox2.Checked=False)
+      and (CheckBox3.Checked=False)
+      and (CheckBox4.Checked=False)
+      then
+        MessageDlg('You must select a category to generate a password.!',mtInformation,[mbOK],0)
+      else
+        repeat
+          Result:= Result+str[Random(Length(str))+1];
+        until (Length(Result)=PLen);
+          Edit2.Text:=Result;
+   StatusBar1.SetFocus;
+end;
+```

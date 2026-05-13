@@ -39,6 +39,43 @@ Decryption also takes place at two points: when clicking on the ```TreeView```, 
   Memo.Text := Decode(Memo.Text, Edit8.Text);
 ```
 
+</br>
+
+```pascal
+// xor Encryption function
+function Encode(Source, Key: string): string;
+var
+  I: Integer;
+  C: Byte;
+begin
+  Result := '';
+  for I := 1 to Length(Source) do
+  begin
+    if Length(Key) > 0 then
+      C := Byte(Key[1 + ((I - 1) mod Length(Key))]) xor Byte(Source[I])
+    else
+      C := Byte(Source[I]);
+
+    Result := Result + AnsiLowerCase(IntToHex(C, 2));
+  end;
+end;
+
+// xor Decryption function
+function Decode(Source, Key: string): string;
+var
+  I: Integer;
+  C: Char;
+begin
+  Result := '';
+  for I := 0 to Length(Source) div 2 - 1 do
+  begin
+    C := Chr(StrToIntDef('$' + Copy(Source, (I * 2) + 1, 2), Ord(' ')));
+    if Length(Key) > 0 then
+      C := Chr(Byte(Key[1 + (I mod Length(Key))]) xor Byte(C));
+      Result := Result + C;
+  end;
+end;
+```
 
 
 

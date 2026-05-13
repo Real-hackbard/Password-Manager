@@ -25,6 +25,8 @@ Data encryption does not take place in main memory, but rather on a dynamically 
 # Encryption
 Encryption is performed at two locations here. If custom encryption methods are to be used, the calls at these encryption points must be modified accordingly.  
 
+</br>
+
 ```pascal
   { encryption string Data }
   Memo.Text := Encode(Memo.Text, Edit8.Text);
@@ -33,6 +35,8 @@ Encryption is performed at two locations here. If custom encryption methods are 
 </br>
 
 Decryption also takes place at two points: when clicking on the ```TreeView```, or when entering the security key.
+
+</br>
 
 ```pascal
   // decrypt content from the account file

@@ -20,7 +20,7 @@ In my opinion, a password manager does not need to be versatile or visually appe
 
 </br>
 
-
+Data encryption does not take place in main memory, but rather on a dynamically recreated memo component, ensuring that external programs cannot intercept the operations occurring in memory.
 
 
 

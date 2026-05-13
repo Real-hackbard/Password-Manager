@@ -15,11 +15,10 @@ Password managers emerged to address the problem that users require secure passw
 In my opinion, a password manager does not need to be versatile or visually appealing, but rather practical and secure. The more practical and simple a program is designed, the more commonly it is used in everyday life.
 
 </br>
-</br>
 
 <img src="https://github.com/user-attachments/assets/98537a6f-6cc0-4788-b9d9-89da8c1b2d05" />
 
-</br>
+</br></br>
 
 Data encryption does not take place in main memory, but rather on a dynamically recreated memo component, ensuring that external programs cannot intercept the operations occurring in memory.
 

@@ -77,6 +77,9 @@ begin
 end;
 ```
 
+</br>
+
+This encryption allows for a security key that can be of any length and utilizes the entire ASCII character set, including special characters.
 
 
 

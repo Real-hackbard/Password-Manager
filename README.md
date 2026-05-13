@@ -27,7 +27,7 @@ Encryption is performed at two locations here. If custom encryption methods are 
 
 ```pascal
   { encryption string Data }
-      Memo.Text := Encode(Memo.Text, Edit8.Text);
+  Memo.Text := Encode(Memo.Text, Edit8.Text);
 ```
 
 

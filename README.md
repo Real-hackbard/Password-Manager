@@ -26,7 +26,7 @@ Data encryption does not take place in main memory, but rather on a dynamically 
 Encryption is performed at two locations here. If custom encryption methods are to be used, the calls at these encryption points must be modified accordingly.  
 
 ```pascal
-  // encryption string Data
+  { encryption string Data }
       Memo.Text := Encode(Memo.Text, Edit8.Text);
 ```
 

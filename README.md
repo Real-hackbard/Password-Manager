@@ -84,3 +84,5 @@ This encryption allows for a security key that can be of any length and utilizes
 # History
 The first password manager software designed to securely store passwords was [Password Safe](https://en.wikipedia.org/wiki/Password_Safe) created by [Bruce Schneier](https://en.wikipedia.org/wiki/Bruce_Schneier), which was released as a free utility on September 5, 1997.[4] Designed for Microsoft Windows 95, Password Safe used Schneier's [Blowfish algorithm](https://en.wikipedia.org/wiki/Blowfish_(cipher)) to encrypt passwords and other sensitive data. Although Password Safe was released as a free utility, due to [export restrictions on cryptography from the United States](https://en.wikipedia.org/wiki/Export_of_cryptography_from_the_United_States), only U.S. and Canadian citizens and permanent residents were initially allowed to download it.
 
+As of October 2024, the built-in Google Password Manager in Google Chrome has become the most used password manager.
+

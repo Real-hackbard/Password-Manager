@@ -95,6 +95,8 @@ As of October 2024, the built-in Google Password Manager in [Google Chrome](http
 List of password managers:
 https://en.wikipedia.org/wiki/List_of_password_managers
 
+</br>
+
 # Password Generator
 A random password generator is a software program or hardware device that takes input from a random or [pseudo-random](https://en.wikipedia.org/wiki/Pseudorandomness) number generator and automatically generates a password.
 

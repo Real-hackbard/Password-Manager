@@ -12,7 +12,7 @@
 
 Password managers emerged to address the problem that users require secure passwords both for their own systems and for numerous user accounts across various online services. Using identical usernames and passwords for different services poses a significant security risk, as a single stolen password would grant access to all of those services. Consequently, a multitude of distinct passwords is required. Secure passwords are lengthy and consist of combinations of letters, numbers, and special characters that are difficult to memorize (see "Choosing Secure Passwords"). Password managers enable users to safeguard a large number of distinct and secure passwords against unauthorized access while still allowing for their convenient use.
 
-In my opinion, a password manager does not need to be versatile or visually appealing, but rather practical and secure.
+In my opinion, a password manager does not need to be versatile or visually appealing, but rather practical and secure. The more practical and simple a program is designed, the more commonly it is used in everyday life.
 
 </br>
 

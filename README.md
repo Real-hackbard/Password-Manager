@@ -18,9 +18,17 @@ In my opinion, a password manager does not need to be versatile or visually appe
 
 <img src="https://github.com/user-attachments/assets/98537a6f-6cc0-4788-b9d9-89da8c1b2d05" />
 
-</br>
+</br></br>
 
 Data encryption does not take place in main memory, but rather on a dynamically recreated memo component, ensuring that external programs cannot intercept the operations occurring in memory.
+
+# Encryption
+Encryption is performed at two locations here. If custom encryption methods are to be used, the calls at these encryption points must be modified accordingly.  
+
+```pascal
+  // encryption string Data
+      Memo.Text := Encode(Memo.Text, Edit8.Text);
+```
 
 
 

@@ -32,7 +32,7 @@ Encryption is performed at two locations here. If custom encryption methods are 
 
 </br>
 
-Decryption also takes place at two points: when clicking on the TreeView, or when entering the security key.
+Decryption also takes place at two points: when clicking on the ```TreeView```, or when entering the security key.
 
 ```pascal
   // decrypt content from the account file

@@ -86,3 +86,5 @@ The first password manager software designed to securely store passwords was [Pa
 
 As of October 2024, the built-in Google Password Manager in Google Chrome has become the most used password manager.
 
+List of password managers:
+https://en.wikipedia.org/wiki/List_of_password_managers

@@ -16,7 +16,7 @@ In my opinion, a password manager does not need to be versatile or visually appe
 
 </br>
 
-<img src="https://github.com/user-attachments/assets/98537a6f-6cc0-4788-b9d9-89da8c1b2d05" />
+<img src="https://github.com/user-attachments/assets/eb8f1b16-7573-49fd-8d1c-8193534ebd44" />
 
 </br></br>
 

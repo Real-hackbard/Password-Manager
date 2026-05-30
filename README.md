@@ -35,6 +35,7 @@ With this feature, the security key for existing account entries can also be edi
 | ```PDU```     | no     | 7     | [Hexadecimal](https://en.wikipedia.org/wiki/Hexadecimal) (hex for short) is a positional numeral system for representing a numeric value as base 16.     |
 | ```Cascade```     | yes     | 128     | A cipher cascade (or cascade encryption) involves running data through multiple different encryption algorithms in a sequence, usually applying distinct, independent keys for each layer.     |
 | ```RC4```     | yes     | 40-128     | The [RC4](https://en.wikipedia.org/wiki/RC4) stream cipher supports a variable key size ranging from 40 to 2048 bits. In practice, it was most commonly implemented with 40-bit (early export restrictions) or 128-bit (standard) keys.     |
+| ```Ceasar```     | yes     | 128/256     | The [Caesar cipher](https://en.wikipedia.org/wiki/Caesar_cipher) does not have a traditional bit size (like modern 128-bit or 256-bit encryption algorithms) because it relies on character shifts rather than binary keys.     |
 
 | Zelle 2,1     | Zelle 2,2     | Zelle 2,3     | Zelle 2,3     |
 

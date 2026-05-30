@@ -22,70 +22,8 @@ In my opinion, a password manager does not need to be versatile or visually appe
 
 Data encryption does not take place in main memory, but rather on a dynamically recreated memo component, ensuring that external programs cannot intercept the operations occurring in memory.
 
-# [XOR](https://en.wikipedia.org/wiki/XOR_cipher) Encryption
-Encryption is performed at two locations here. If custom encryption methods are to be used, the calls at these encryption points must be modified accordingly.  
-
-The XOR operator is extremely common as a component in more complex ciphers. By itself, using a constant repeating key, a simple XOR cipher can trivially be broken using [frequency analysis](https://en.wikipedia.org/wiki/Frequency_analysis). If the content of any message can be guessed or otherwise known then the key can be revealed. Its primary merit is that it is simple to implement, and that the XOR operation is computationally inexpensive. A simple repeating XOR (i.e. using the same key for xor operation on the whole data) cipher is therefore sometimes used for hiding information in cases where no particular security is required. The XOR cipher is often used in computer malware to make reverse engineering more difficult.
-
-</br>
-
-```pascal
-  { encryption string Data }
-  Memo.Text := Encode(Memo.Text, Edit8.Text);
-```
-
-</br>
-
-Decryption also takes place at two points: when clicking on the ```TreeView```, or when entering the security key.
-
-</br>
-
-```pascal
-  // decrypt content from the account file
-  Memo.Text := Decode(Memo.Text, Edit8.Text);
-```
-
-</br>
-
-```pascal
-// xor Encryption function
-function Encode(Source, Key: string): string;
-var
-  I: Integer;
-  C: Byte;
-begin
-  Result := '';
-  for I := 1 to Length(Source) do
-  begin
-    if Length(Key) > 0 then
-      C := Byte(Key[1 + ((I - 1) mod Length(Key))]) xor Byte(Source[I])
-    else
-      C := Byte(Source[I]);
-
-    Result := Result + AnsiLowerCase(IntToHex(C, 2));
-  end;
-end;
-
-// xor Decryption function
-function Decode(Source, Key: string): string;
-var
-  I: Integer;
-  C: Char;
-begin
-  Result := '';
-  for I := 0 to Length(Source) div 2 - 1 do
-  begin
-    C := Chr(StrToIntDef('$' + Copy(Source, (I * 2) + 1, 2), Ord(' ')));
-    if Length(Key) > 0 then
-      C := Chr(Byte(Key[1 + (I mod Length(Key))]) xor Byte(C));
-      Result := Result + C;
-  end;
-end;
-```
-
-</br>
-
-This encryption allows for a security key that can be of any length and utilizes the entire [ASCII character set](https://en.wikipedia.org/wiki/ASCII), including special characters.
+#  Encryption
+Nine encryption methods are available, featuring various algorithms—both password-protected and unprotected.
 
 </br>
 

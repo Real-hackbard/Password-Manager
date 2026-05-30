@@ -27,7 +27,7 @@ Nine encryption methods are available, featuring various algorithms both passwor
 With this feature, the security key for existing account entries can also be edited something that was not possible with the old version.
 
 | Encryption | Security Key | Bitsize | Description |
-| :----------- | :----------- | :----------- | :----------- |
+| :----------- | :-------------- | :----------- | :----------- |
 | ```XOR```     | yes    | 8-256     | [XOR encryption](https://en.wikipedia.org/wiki/XOR_cipher) is a symmetric algorithm that combines plaintext with a secret key using the bitwise XOR (exclusive OR) operation. |
 | ```UEncrypt```     | yes     | 64     | Transforms plain text into unreadable ciphertext using cryptographic algorithms and keys. |
 | ```Encoder```     | yes     | 1-32     | [Unicode](https://en.wikipedia.org/wiki/Unicode) itself is a 21-bit character set capable of representing over 1.1 million characters. ```UTF-8``` Variable-length (1 to 4 bytes or 8 to 32 bits), ```UTF-16``` Variable-length (2 or 4 bytes or 16 to 32 bits) |

@@ -47,7 +47,7 @@ Modern ciphers are more secure than classical ciphers and are designed to withst
 </br>
 
 # Encryption problem
-If the RC4 encryption method is used, an EncodingError is raised in debugger mode when entering the security key; this error can be ignored.
+If the RC4 encryption method is used, an ```EEncodingError``` is raised in debugger mode when entering the security key; this error can be ignored.
 
 Message:
 ```
@@ -56,7 +56,7 @@ Message:
   target multibyte code page"
 ````
 
-The Delphi EEncodingError exception (typically raised as "No mapping for the Unicode character exists in the target multi-byte code page") occurs when you try to convert a modern Unicode string into an older, restricted encoding (like ANSI or ASCII) that doesn't support the specific character you are using.
+The Delphi ```EEncodingError exception``` (typically raised as "No mapping for the Unicode character exists in the target multi-byte code page") occurs when you try to convert a modern Unicode string into an older, restricted encoding (like ANSI or ASCII) that doesn't support the specific character you are using.
 
 # History
 The first password manager software designed to securely store passwords was [Password Safe](https://en.wikipedia.org/wiki/Password_Safe) created by [Bruce Schneier](https://en.wikipedia.org/wiki/Bruce_Schneier), which was released as a free utility on September 5, 1997. Designed for Microsoft Windows 95, Password Safe used Schneier's [Blowfish algorithm](https://en.wikipedia.org/wiki/Blowfish_(cipher)) to encrypt passwords and other sensitive data. Although Password Safe was released as a free utility, due to [export restrictions on cryptography from the United States](https://en.wikipedia.org/wiki/Export_of_cryptography_from_the_United_States), only U.S. and Canadian citizens and permanent residents were initially allowed to download it.

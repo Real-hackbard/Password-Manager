@@ -31,8 +31,9 @@ With this feature, the security key for existing account entries can also be edi
 | ```XOR```     | yes    | 8-256     | [XOR encryption](https://en.wikipedia.org/wiki/XOR_cipher) is a symmetric algorithm that combines plaintext with a secret key using the bitwise XOR (exclusive OR) operation. |
 | ```UEncrypt```     | yes     | 64     | Transforms plain text into unreadable ciphertext using cryptographic algorithms and keys. |
 | ```Encoder```     | yes     | 1-32     | [Unicode](https://en.wikipedia.org/wiki/Unicode) itself is a 21-bit character set capable of representing over 1.1 million characters. ```UTF-8``` Variable-length (1 to 4 bytes or 8 to 32 bits), ```UTF-16``` Variable-length (2 or 4 bytes or 16 to 32 bits) |
-| ```Base64```     | No     | 6     | [Base64](https://en.wikipedia.org/wiki/Base64) is a binary-to-text encoding that uses 64 printable characters to represent each 6-bit segment of a sequence of byte values- |
-| ```PDU```     | No     | 7     | [Hexadecimal](https://en.wikipedia.org/wiki/Hexadecimal) (hex for short) is a positional numeral system for representing a numeric value as base 16.     |
+| ```Base64```     | no     | 6     | [Base64](https://en.wikipedia.org/wiki/Base64) is a binary-to-text encoding that uses 64 printable characters to represent each 6-bit segment of a sequence of byte values- |
+| ```PDU```     | no     | 7     | [Hexadecimal](https://en.wikipedia.org/wiki/Hexadecimal) (hex for short) is a positional numeral system for representing a numeric value as base 16.     |
+| ```Cascade```     | yes     | 128     | A cipher cascade (or cascade encryption) involves running data through multiple different encryption algorithms in a sequence, usually applying distinct, independent keys for each layer.     |
 
 
 | Zelle 2,1     | Zelle 2,2     | Zelle 2,3     | Zelle 2,3     |

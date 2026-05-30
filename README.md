@@ -26,7 +26,7 @@ Data encryption does not take place in main memory, but rather on a dynamically 
 Nine encryption methods are available, featuring various algorithms both password-protected and unprotected.
 With this feature, the security key for existing account entries can also be edited something that was not possible with the old version.
 
-| Encryption | Password | Bitsize | Description |
+| Encryption | Security-Key | Bitsize | Description |
 | :----------- | :----------- | :----------- | :----------- |
 | ```XOR```     | yes    | 8-256     | [XOR encryption](https://en.wikipedia.org/wiki/XOR_cipher) is a symmetric algorithm that combines plaintext with a secret key using the bitwise XOR (exclusive OR) operation. |
 | ```UEncrypt```     | yes     | 64     | Transforms plain text into unreadable ciphertext using cryptographic algorithms and keys. |

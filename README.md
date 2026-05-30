@@ -23,7 +23,8 @@ In my opinion, a password manager does not need to be versatile or visually appe
 Data encryption does not take place in main memory, but rather on a dynamically recreated memo component, ensuring that external programs cannot intercept the operations occurring in memory.
 
 #  Encryption
-Nine encryption methods are available, featuring various algorithms—both password-protected and unprotected.
+Nine encryption methods are available, featuring various algorithms both password-protected and unprotected.
+With this feature, the security key for existing account entries can also be edited—something that was not possible with the old version.
 
 </br>
 

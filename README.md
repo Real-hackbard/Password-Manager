@@ -28,7 +28,7 @@ With this feature, the security key for existing account entries can also be edi
 
 | Encryption | Security | Bitsize | Description |
 | :----------- | :------------ | :----------- | :----------- |
-| ```XOR```     | yes    | 8-256     | [XOR encryption](https://en.wikipedia.org/wiki/XOR_cipher) is a symmetric algorithm that combines plaintext with a secret key using the bitwise XOR (exclusive OR) operation. |
+| ```XOR```     | yes (ASCii)    | 8-256     | [XOR encryption](https://en.wikipedia.org/wiki/XOR_cipher) is a symmetric algorithm that combines plaintext with a secret key using the bitwise XOR (exclusive OR) operation. |
 | ```UEncrypt```     | yes     | 64     | Transforms plain text into unreadable ciphertext using cryptographic algorithms and keys. |
 | ```Encoder```     | yes     | 1-32     | [Unicode](https://en.wikipedia.org/wiki/Unicode) itself is a 21-bit character set capable of representing over 1.1 million characters. ```UTF-8``` Variable-length (1 to 4 bytes or 8 to 32 bits), ```UTF-16``` Variable-length (2 or 4 bytes or 16 to 32 bits) |
 | ```Base64```     | No     | 6     | [Base64](https://en.wikipedia.org/wiki/Base64) is a binary-to-text encoding that uses 64 printable characters to represent each 6-bit segment of a sequence of byte values- |

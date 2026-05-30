@@ -34,7 +34,7 @@ With this feature, the security key for existing account entries can also be edi
 | ```Base64```     | no     | 6     | [Base64](https://en.wikipedia.org/wiki/Base64) is a binary-to-text encoding that uses 64 printable characters to represent each 6-bit segment of a sequence of byte values- |
 | ```PDU```     | no     | 7     | [Hexadecimal](https://en.wikipedia.org/wiki/Hexadecimal) (hex for short) is a positional numeral system for representing a numeric value as base 16.     |
 | ```Cascade```     | yes     | 128     | A cipher cascade (or cascade encryption) involves running data through multiple different encryption algorithms in a sequence, usually applying distinct, independent keys for each layer.     |
-
+| ```RC4```     | yes     | 40-128     | The [RC4](https://en.wikipedia.org/wiki/RC4) stream cipher supports a variable key size ranging from 40 to 2048 bits. In practice, it was most commonly implemented with 40-bit (early export restrictions) or 128-bit (standard) keys.     |
 
 | Zelle 2,1     | Zelle 2,2     | Zelle 2,3     | Zelle 2,3     |
 

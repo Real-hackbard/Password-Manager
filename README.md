@@ -58,6 +58,70 @@ Message:
 
 The Delphi [EEncodingError exception](https://docwiki.embarcadero.com/Libraries/Sydney/en/System.SysUtils.EEncodingError) (typically raised as "No mapping for the Unicode character exists in the target multi-byte code page") occurs when you try to convert a modern Unicode string into an older, restricted encoding (like ANSI or ASCII) that doesn't support the specific character you are using.
 
+</br>
+
+```pascal
+function RC4DecryptString(const AHexText, AKey: string): string;
+var
+  SBox: array[0..255] of Byte;
+  KeyBytes, TextBytes, ResultBytes: TBytes;
+  I, J, T, KeyLen, TextLen: Integer;
+  Temp: Byte;
+  HexChar: string;
+begin
+  Result := '';
+  if (AHexText = '') or (AKey = '') then Exit;
+
+  // Convert a hex string back into a byte array
+  TextLen := Length(AHexText) div 2;
+  SetLength(TextBytes, TextLen);
+  for I := 0 to TextLen - 1 do
+  begin
+    HexChar := Copy(AHexText, (I * 2) + 1, 2);
+    TextBytes[I] := StrToInt('$' + HexChar);
+  end;
+
+  KeyBytes := TEncoding.UTF8.GetBytes(AKey);
+  KeyLen := Length(KeyBytes);
+  SetLength(ResultBytes, TextLen);
+
+  // 1. Initializing the S-Box
+  for I := 0 to 255 do
+    SBox[I] := I;
+
+  J := 0;
+  for I := 0 to 255 do
+  begin
+    J := (J + SBox[I] + KeyBytes[I mod KeyLen]) mod 256;
+    Temp := SBox[I];
+    SBox[I] := SBox[J];
+    SBox[J] := Temp;
+  end;
+
+  // 2. Decryption
+  I := 0;
+  J := 0;
+  for T := 0 to TextLen - 1 do
+  begin
+    I := (I + 1) mod 256;
+    J := (J + SBox[I]) mod 256;
+
+    Temp := SBox[I];
+    SBox[I] := SBox[J];
+    SBox[J] := Temp;
+
+    ResultBytes[T] := TextBytes[T] xor SBox[(SBox[I] + SBox[J]) mod 256];
+  end;
+
+  // Convert UTF-8 bytes back into a Delphi Unicode string
+  Result := TEncoding.UTF8.GetString(ResultBytes);
+end;
+```
+
+</br>
+
+The exception error is triggered in this part of the code, but it is irrelevant, as the text to be decrypted resides in a dynamic component that is discarded immediately after encryption.
+
 # History
 The first password manager software designed to securely store passwords was [Password Safe](https://en.wikipedia.org/wiki/Password_Safe) created by [Bruce Schneier](https://en.wikipedia.org/wiki/Bruce_Schneier), which was released as a free utility on September 5, 1997. Designed for Microsoft Windows 95, Password Safe used Schneier's [Blowfish algorithm](https://en.wikipedia.org/wiki/Blowfish_(cipher)) to encrypt passwords and other sensitive data. Although Password Safe was released as a free utility, due to [export restrictions on cryptography from the United States](https://en.wikipedia.org/wiki/Export_of_cryptography_from_the_United_States), only U.S. and Canadian citizens and permanent residents were initially allowed to download it.
 

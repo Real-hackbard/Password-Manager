@@ -8,6 +8,7 @@ currently being supported with security updates.
 | Version | Supported          |
 | ------- | ------------------ |
 | 1.0.x   | :white_check_mark: |
+| 1.1.x   | :white_check_mark: Add 9 Encryption Methods, Add Set Security-Key |
 
 ## Reporting a Vulnerability
 

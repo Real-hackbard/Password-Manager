@@ -46,7 +46,7 @@ Modern ciphers are more secure than classical ciphers and are designed to withst
 
 </br>
 
-# Encryption problem
+# RC4 Decryption problem
 If the RC4 encryption method is used, an ```EEncodingError``` is raised in debugger mode when entering the security key; this error can be ignored.
 
 Message:

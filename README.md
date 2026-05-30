@@ -58,6 +58,8 @@ Message:
 
 The Delphi [EEncodingError exception](https://docwiki.embarcadero.com/Libraries/Sydney/en/System.SysUtils.EEncodingError) (typically raised as "No mapping for the Unicode character exists in the target multi-byte code page") occurs when you try to convert a modern Unicode string into an older, restricted encoding (like ANSI or ASCII) that doesn't support the specific character you are using.
 
+The exception error is triggered in this part of the code, but it is irrelevant, as the text to be decrypted resides in a dynamic component that is discarded immediately after encryption.
+
 </br>
 
 ```pascal
@@ -119,8 +121,6 @@ end;
 ```
 
 </br>
-
-The exception error is triggered in this part of the code, but it is irrelevant, as the text to be decrypted resides in a dynamic component that is discarded immediately after encryption.
 
 # History
 The first password manager software designed to securely store passwords was [Password Safe](https://en.wikipedia.org/wiki/Password_Safe) created by [Bruce Schneier](https://en.wikipedia.org/wiki/Bruce_Schneier), which was released as a free utility on September 5, 1997. Designed for Microsoft Windows 95, Password Safe used Schneier's [Blowfish algorithm](https://en.wikipedia.org/wiki/Blowfish_(cipher)) to encrypt passwords and other sensitive data. Although Password Safe was released as a free utility, due to [export restrictions on cryptography from the United States](https://en.wikipedia.org/wiki/Export_of_cryptography_from_the_United_States), only U.S. and Canadian citizens and permanent residents were initially allowed to download it.

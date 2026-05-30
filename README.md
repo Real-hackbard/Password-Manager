@@ -26,6 +26,8 @@ Data encryption does not take place in main memory, but rather on a dynamically 
 Nine encryption methods are available, featuring various algorithms both password-protected and unprotected.
 With this feature, the security key for existing account entries can also be edited something that was not possible with the old version.
 
+</br>
+
 | Encryption | Security | Bitsize | Description |
 | :----------- | :------------ | :----------- | :----------- |
 | ```XOR```     | yes    | 8-256     | [XOR encryption](https://en.wikipedia.org/wiki/XOR_cipher) is a symmetric algorithm that combines plaintext with a secret key using the bitwise XOR (exclusive OR) operation. |
@@ -37,6 +39,10 @@ With this feature, the security key for existing account entries can also be edi
 | ```RC4```     | yes     | 40-128     | The [RC4](https://en.wikipedia.org/wiki/RC4) stream cipher supports a variable key size ranging from 40 to 2048 bits. In practice, it was most commonly implemented with 40-bit (early export restrictions) or 128-bit (standard) keys.     |
 | ```Ceasar```     | yes     | 128/256     | The [Caesar cipher](https://en.wikipedia.org/wiki/Caesar_cipher) does not have a traditional bit size (like modern 128-bit or 256-bit encryption algorithms) because it relies on character shifts rather than binary keys.     |
 | ```Vigenere```     | yes     | n/a     | The classical [Vigenère cipher](https://en.wikipedia.org/wiki/Vigen%C3%A8re_cipher) does not have a fixed "bit size" in the way modern computer encryption algorithms (like AES or RSA do). Instead, it is a polyalphabetic substitution cipher operating on character sets (usually the 26-letter English alphabet).     |
+
+</br>
+
+Modern ciphers are more secure than classical ciphers and are designed to withstand a wide range of attacks. An attacker should not be able to find the key used in a modern cipher, even if they know any specifics about the plaintext and its corresponding ciphertext.
 
 </br>
 

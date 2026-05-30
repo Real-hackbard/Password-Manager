@@ -28,7 +28,7 @@ With this feature, the security key for existing account entries can also be edi
 
 | Encryption | Password | Bitsize | Description |
 | :----------- | :----------- | :----------- | :----------- |
-| ```XOR```     | yes    | 8-256     | XOR encryption is a symmetric algorithm that combines plaintext with a secret key using the bitwise XOR (exclusive OR) operation. |
+| ```XOR```     | yes    | 8-256     | [XOR encryption](https://en.wikipedia.org/wiki/XOR_cipher) is a symmetric algorithm that combines plaintext with a secret key using the bitwise XOR (exclusive OR) operation. |
 
 
 | Zelle 2,1     | Zelle 2,2     | Zelle 2,3     |
